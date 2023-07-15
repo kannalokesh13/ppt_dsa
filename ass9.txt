@@ -1,0 +1,136 @@
+1. What is the difference between a neuron and a neural network?
+ans:
+  The neuron is the single function which provides the output where as the neural network is the combination of multiple neurons forms layers and performs
+  operatios in parallel by taking the input data.
+
+2. Can you explain the structure and components of a neuron?
+ans: The neuron contains two components, first one is the function to get the output and the second one is the activaion function of the neuron.
+
+3. Describe the architecture and functioning of a perceptron.
+ans: The architecture of a perceptron consists of three main components and they are inputs, weights, and activation function.
+     The functioning of a perceptron is by performing the weighted sum and applying the result of weghted sum to the activation function and getting 
+     the output.
+4. What is the main difference between a perceptron and a multilayer perceptron?
+ans:
+   A perceptron is a single-layer neural network that consists of only one layer of interconnected neurons. It takes input values, applies weights, 
+   and produces an output. In contrast, an MLP is a type of feedforward neural network that comprises multiple layers of interconnected neurons, 
+   including an input layer, one or more hidden layers, and an output layer. The hidden layers allow MLPs to learn complex, non-linear relationships 
+   between inputs and outputs.
+
+5. Explain the concept of forward propagation in a neural network.
+ans:
+   The feedforward neural network that comprises multiple layers of interconnected neurons, 
+   including an input layer, one or more hidden layers, and an output layer. The hidden layers allow MLPs to learn complex, non-linear relationships 
+   between inputs and outputs. It only contains one Input layer One output layer and more number of hidden layers.
+
+6. What is backpropagation, and why is it important in neural network training?
+ans:
+   Backpropagation is the process of adjusting the weights of neural network in accordance with the error, it always tries to reduce the error.
+   It is  importatnt because we can get the best accuracy with the help of back propagation.
+
+7. How does the chain rule relate to backpropagation in neural networks?
+ans:
+   In the context of backpropagation, the chain rule is applied iteratively to calculate the gradients of the network's weights. 
+   Starting from the output layer, the chain rule is used to compute the gradients of the error with respect to the activations of the neurons 
+   in the previous layer. These gradients are then multiplied by the derivative of the activation function to get the local gradients.
+
+8. What are loss functions, and what role do they play in neural networks?
+ans:  The primary purpose of a loss function is to provide a quantitative measure of how well the network is performing on a given task. 
+      By evaluating the performance of the network, it guides the learning process and helps in updating the network's parameters (weights and biases)
+      to minimize the error and improve the accuracy of predictions.
+
+9. Can you give examples of different types of loss functions used in neural networks?
+ans:
+  1. mean squared error 
+  2. binary cross entropy loss
+  3. categorical cross entropy loss
+  4. hinge loss
+
+10. Discuss the purpose and functioning of optimizers in neural networks.
+ans:
+   The purpose of the optimizer is to find the best parameters where the error is minimum and it tries to find the minimum by updating the values of 
+   parameters by differentaing the error,
+
+11. What is the exploding gradient problem, and how can it be mitigated?
+ans:
+   The exploding gradient problem is a phenomenon that occurs during the training of deep neural networks, where the gradients computed during 
+   backpropagation become extremely large. This can lead to unstable training and convergence issues.
+
+12. Explain the concept of the vanishing gradient problem and its impact on neural network training
+ans:
+   The vanishing gradient problem is a challenge that occurs during the training of deep neural networks, particularly those with many layers. 
+   In this problem, the gradients calculated during backpropagation become extremely small as they propagate through the network layers, leading 
+   to slow convergence and difficulty in training the network effectively.
+   The impact of vanishing gradient is,
+   1. Slow Convergence
+   2. Difficulty in Learning Long-Term Dependencies
+   3. Poor genaralisation
+
+13. How does regularization help in preventing overfitting in neural networks?
+ans:
+   Where it will adds soe penality to the loss function and handles the overfitting.
+
+14. Describe the concept of normalization in the context of neural networks.
+ans:
+   While we are computing the intermidiate values in neural network, the valus may become large, so to reduce the coputtational complexity, we can use 
+   the normalisation teqnique.
+
+15. What are the commonly used activation functions in neural networks?
+ans :
+    1. Relu Activation function 
+    2. Sigmoid Activation function
+
+16. Explain the concept of batch normalization and its advantages.
+ans:
+   Batch normalization is a technique used in neural networks to normalize the inputs to each layer by adjusting and scaling the activations. It helps 
+   address issues like internal covariate shift and improves the stability and performance of deep neural networks. Here's how batch normalization 
+   works and its advantages are reduces the computational complexity, better Gradient flow, gegularisation effect.
+
+17. Discuss the concept of weight initialization in neural networks and its importance
+ans:
+   Weight initialization refers to the process of assigning initial values to the weights of a neural network before training. 
+   Proper weight initialization is crucial for the successful training and convergence of neural networks. It sets the starting point for the 
+   optimization process and can significantly impact the network's performance and learning dynamics.
+
+18. Can you explain the role of momentum in optimization algorithms for neural networks?
+ans:
+    Momentum is a parameter used in optimization algorithms, such as gradient descent with momentum, to accelerate the training process and improve 
+    convergence in neural networks. It enhances the ability of the optimizer to navigate complex, high-dimensional loss landscapes and escape local minima.
+
+19. What is the difference between L1 and L2 regularization in neural networks?
+ans:
+   The L1 regularisation will be used for Feature selection and L2 regularisation will be used for reducing the overfitting.
+
+20. How can early stopping be used as a regularization technique in neural networks?
+ans:
+    Early stopping is a regularization technique used in neural networks to prevent overfitting and improve generalization. 
+    It involves monitoring the validation loss during the training process and stopping the training when the validation loss starts to increase or no longer improves.
+
+21. Describe the concept and application of dropout regularization in neural networks.
+ans:
+    Dropout means deactivising some neurons in the neural network, where it acts as a regularisation parameter in the neural network which reduces 
+    overfitting.
+
+22. Explain the importance of learning rate in training neural networks.
+ans:
+   The learning rate define how fast the optimizer shoud work to find global minimum.
+
+23. What are the challenges associated with training deep neural networks?
+ans:
+   it took more time to train.
+   computational complexity.
+   it contains large number of parameters.
+
+24. How does a convolutional neural network (CNN) differ from a regular neural network?
+ans:
+   Initially the CNN's contains the convulutional layers, pooling and padding layers and those outputs are flattened to the normal nueral networks.
+
+25. Can you explain the purpose and functioning of pooling layers in CNNs?
+ans:
+   Pooling layers are a fundamental component of convolutional neural networks (CNNs) and play a vital role in reducing the spatial dimensions of 
+   feature maps while preserving the important information. 
+  
+26. What is a recurrent neural network (RNN), and what are its applications?
+ans:
+   The recurrent neural networks are used to handle the text data, and the applications are spam or ham detection, fake news classifier etc.
+
